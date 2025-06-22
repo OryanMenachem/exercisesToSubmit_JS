@@ -2,8 +2,15 @@
 
 // let a = "Hello";
 
-
 // let b = "Moon";
+
+// a += b;
+
+// b = a.slice(0 , a.length - b.length); 
+
+// a = a.slice(b.length);
+
+// console.log(a);
 
 
 // exercise 2
