@@ -159,7 +159,7 @@
 
 
 
-// // exercise 11 - לא סיימתי
+// exercise 11 - לא סיימתי
 
 // const mixedKeysObject = {
 //   A: true,
@@ -174,13 +174,6 @@
 //   j: undefined
 // };
 
-
-// const newObject = {};
-// const temp = [];
-
-// const mixedKeysObjectkeys = Object.keys(mixedKeysObject);
-
-// for (let i = 0)
 
 
 //  exercise 12
