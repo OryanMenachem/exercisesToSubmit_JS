@@ -153,3 +153,60 @@
 
 // console.log(numbersOE);
 
+// exercise 8
+// exercise 9
+// exercise 10
+
+
+
+// // exercise 11 - לא סיימתי
+
+// const mixedKeysObject = {
+//   A: true,
+//   b: 123,
+//   C: "Hello",
+//   d: [1, 2, 3],
+//   E: null,
+//   f: { key: "value" },
+//   G: false,
+//   h: 3.14,
+//   I: "JavaScript",
+//   j: undefined
+// };
+
+
+// const newObject = {};
+// const temp = [];
+
+// const mixedKeysObjectkeys = Object.keys(mixedKeysObject);
+
+// for (let i = 0)
+
+
+//  exercise 12
+
+// let asterisk = "*";
+
+// for (let i = 0; i < 3; i++)
+// {
+//     console.log(asterisk);
+//     asterisk += " *";
+    
+// }
+
+//  exercise 13
+
+// const array1 = [1, 5, 8, 12, 20, 25, 30, 33, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 100];
+// const array2 = [3, 5, 9, 12, 18, 25, 27, 30, 39, 45, 51, 55, 63, 65, 72, 75, 84, 90, 95, 100];
+
+// let array3 = [];
+
+// for (let i = 0; i < array1.length; i++)
+// {
+//     if (array2.includes(array1[i]) && !array3.includes(array1[i]))
+//     {
+//         array3.push(array1[i]);
+//     }
+// }
+
+// console.log(array3);
