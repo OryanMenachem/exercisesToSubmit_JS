@@ -54,37 +54,61 @@
 
 // exercise 5
 
-function capitalize(str)
-{
-    return str.toUpperCase() 
-}
+// function capitalize(str)
+// {
+//     return str.toUpperCase() 
+// }
 
 // console.log(capitalize("hello"));
 
 
 // exercise 6
-// function shiftLetters() 
-// {
 
-// }
+const letters = [
+  'a', 'b', 'c', 'd', 'e', 'f', 'g',
+  'h', 'i', 'j', 'k', 'l', 'm', 'n',
+  'o', 'p', 'q', 'r', 's', 't', 'u',
+  'v', 'w', 'x', 'y', 'z'
+];
 
-// console.log("b"-"a");
+function shiftLetters(str) 
+{
+    let newStr = "";
+    
+    for (const letter of str) 
+    {
+
+        if (letter == letter.toUpperCase()) 
+        {
+        newStr += letters[letters.indexOf(letter.toLowerCase())+1].toUpperCase();
+        }
+        else
+        {
+            newStr += letters[letters.indexOf(letter.toLowerCase())+1]
+        }
+    }
+    return newStr;
+
+}
+
+console.log(shiftLetters("aBc"));
+
 
 
 
 //  exercise 7
 
-function swapCase(str) 
-{
-    const arr = str.split(" ")
+// function swapCase(str) 
+// {
+//     const arr = str.split(" ")
 
-    const secondUpper =  arr.filter((word,i) => {return i % 2 == 1} ).map((str) => {return capitalize(str)});
+//     const secondUpper =  arr.filter((word,i) => {return i % 2 == 1} ).map((str) => {return capitalize(str)});
    
-    // return  secondUpper.map((str) => {return capitalize(str)});
-    return secondUpper;
+//     // return  secondUpper.map((str) => {return capitalize(str)});
+//     return secondUpper;
    
-}
-console.log(swapCase("hello moon hye ther"));
+// }
+// console.log(swapCase("hello moon hey ther"));
 
 
 
