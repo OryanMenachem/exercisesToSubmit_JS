@@ -14,22 +14,25 @@
 
 
 //  exercise 3
-function showFirstAndLast(arr) 
-{
-    const firstAndLastArr = arr.filter((value) => {return typeof value === "string"})
-    firstAndLastArr.splice(1,firstAndLastArr.length -2)
-    return firstAndLastArr;
-}
-console.log(showFirstAndLast(["Hello",1,"world",null,"Moon"]));
+// function showFirstAndLast(arr) 
+// {
+//     const firstAndLastArr = arr.filter((value) => {return typeof value === "string"})
+//     firstAndLastArr.splice(1,firstAndLastArr.length -2)
+//     return firstAndLastArr;
+// }
+
+// console.log(showFirstAndLast(["Hello",1,"world",null,"Moon"]));
 
 
 
 
 
 // exercise 4
+
 // function vowelCount(str) 
 // {
 //     const vowelObj = {}
+
 //     for (letter of str)
 //     {
 //     if (letter in vowelObj)
@@ -48,12 +51,11 @@ console.log(showFirstAndLast(["Hello",1,"world",null,"Moon"]));
 // console.log(vowelCount("Hello Moon"));
 
 
+
+
 // exercise 5
 
-// function capitalize(str)
-// {
-//     return str.toUpperCase() 
-// }
+capitalize = (str) => {return str.toUpperCase()} ;
 
 // console.log(capitalize("hello"));
 
