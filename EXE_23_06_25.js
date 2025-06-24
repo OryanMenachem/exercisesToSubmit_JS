@@ -55,45 +55,43 @@
 
 // exercise 5
 
-capitalize = (str) => {return str.toUpperCase()} ;
+// capitalize = (str) => {return str.toUpperCase()} ;
 
 // console.log(capitalize("hello"));
 
 
 // exercise 6
 
-// const letters = [
-//   'a', 'b', 'c', 'd', 'e', 'f', 'g',
-//   'h', 'i', 'j', 'k', 'l', 'm', 'n',
-//   'o', 'p', 'q', 'r', 's', 't', 'u',
-//   'v', 'w', 'x', 'y', 'z'
-// ];
 
-// function shiftLetters(str) 
-// {
-//     let newStr = "";
+
+function shiftLetters(str) 
+{
+    const letters = "abcdefghijklmnopqrstuvwxyz";
     
-//     for (const letter of str) 
-//     {
+    let newStr = "";
+    
+    for (const letter of str) 
+    {
 
-//         if (letter == "z") {newStr += letters[0]}
-//         else if (letter == "Z") {newStr += letters[0].toUpperCase()}
+        if (letter == "z") {newStr += letters[0]}
+        else if (letter == "Z") {newStr += letters[0].toUpperCase()}
 
-//         else if (letter == letter.toUpperCase()) 
-//         {
-//         newStr += letters[letters.indexOf(letter.toLowerCase())+1].toUpperCase();
-//         }
-//         else
-//         {
-//             newStr += letters[letters.indexOf(letter.toLowerCase())+1]
-//         }
-//     }
-//     return newStr;
+        else if (letter == letter.toUpperCase()) 
+        {
+        newStr += letters[letters.indexOf(letter.toLowerCase())+1].toUpperCase();
+        }
+        else
+        {
+            newStr += letters[letters.indexOf(letter.toLowerCase())+1]
+        }
+    }
+    return newStr;
 
-// }
+}
 
-// console.log(shiftLetters("ZzZ"));
+console.log(shiftLetters("Zab"));
 
+// console.log(("b" + "a" ) < "c");
 
 
 
