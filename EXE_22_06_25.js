@@ -178,12 +178,7 @@
 
 // const str = "Hello moon, look how big the sun is.";
 
-// const letters = [
-//   'A', 'B', 'C', 'D', 'E', 'F', 'G',
-//   'H', 'I', 'J', 'K', 'L', 'M', 'N',
-//   'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-//   'V', 'W', 'X', 'Y', 'Z'
-// ];
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // const lettersCount = {};
 
@@ -208,26 +203,28 @@
 
 
 // exercise 10
-const numMatrix = [
-  [  5, -3,  8, -1 ],
-  [ -7, 12, -4,  6 ],
-  [  9, -2, -6, 10 ],
-  [ -5,  3,  7, -8 ]
-];
 
-const numArr = [];
 
-for (const arr of numMatrix)
-{
-    for (const num of arr)
-    {
-        if (num >= 0)
-        {
-            numArr.push(num)
-        }
-    }
-}
-console.log(numArr);
+// const numMatrix = [
+//   [  5, -3,  8, -1 ],
+//   [ -7, 12, -4,  6 ],
+//   [  9, -2, -6, 10 ],
+//   [ -5,  3,  7, -8 ]
+// ];
+
+// const numArr = [];
+
+// for (const arr of numMatrix)
+// {
+//     for (const num of arr)
+//     {
+//         if (num >= 0)
+//         {
+//             numArr.push(num)
+//         }
+//     }
+// }
+// console.log(numArr);
 
 
 
