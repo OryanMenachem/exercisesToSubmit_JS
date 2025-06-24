@@ -29,26 +29,26 @@
 
 // exercise 4
 
-// function vowelCount(str) 
-// {
-//     const vowelObj = {}
+function vowelCount(str) 
+{
+    const vowelObj = {}
 
-//     for (letter of str)
-//     {
-//     if (letter in vowelObj)
-//     {
-//         vowelObj[letter] += 1;
-//     }
-//     else if (["A","E","I","O","U"].includes(letter.toUpperCase()))
-//     {
-//         vowelObj[letter] = 1;
-//     }
-//     }
-//    return vowelObj;
+    for (letter of str)
+    {
+    if (letter in vowelObj)
+    {
+        vowelObj[letter] += 1;
+    }
+    else if ("AEIOU".includes(letter.toUpperCase()))
+    {
+        vowelObj[letter] = 1;
+    }
+    }
+   return vowelObj;
 
 
-// }
-// console.log(vowelCount("Hello Moon"));
+}
+console.log(vowelCount("Hello Moon"));
 
 
 
@@ -64,34 +64,33 @@
 
 
 
-function shiftLetters(str) 
-{
-    const letters = "abcdefghijklmnopqrstuvwxyz";
+// function shiftLetters(str) 
+// {
+//     const letters = "abcdefghijklmnopqrstuvwxyz";
+
+//     let newStr = "";
     
-    let newStr = "";
-    
-    for (const letter of str) 
-    {
+//     for (const letter of str) 
+//     {
 
-        if (letter == "z") {newStr += letters[0]}
-        else if (letter == "Z") {newStr += letters[0].toUpperCase()}
+//         if (letter == "z") {newStr += letters[0]}
+//         else if (letter == "Z") {newStr += letters[0].toUpperCase()}
 
-        else if (letter == letter.toUpperCase()) 
-        {
-        newStr += letters[letters.indexOf(letter.toLowerCase())+1].toUpperCase();
-        }
-        else
-        {
-            newStr += letters[letters.indexOf(letter.toLowerCase())+1]
-        }
-    }
-    return newStr;
+//         else if (letter == letter.toUpperCase()) 
+//         {
+//         newStr += letters[letters.indexOf(letter.toLowerCase())+1].toUpperCase();
+//         }
+//         else
+//         {
+//             newStr += letters[letters.indexOf(letter.toLowerCase())+1]
+//         }
+//     }
+//     return newStr;
 
-}
+// }
 
-console.log(shiftLetters("Zab"));
+// console.log(shiftLetters("Zab"));
 
-// console.log(("b" + "a" ) < "c");
 
 
 
