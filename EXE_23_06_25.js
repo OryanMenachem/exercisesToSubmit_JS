@@ -2,29 +2,38 @@
 
 const doubleValues = (numArr) => {return numArr.map((num) => {return num*2})};
 
-console.log(doubleValues([2,3,4]));  // test
+// TEST 
+
+console.log(`\nEXERCISE 1 TEST: doubleValues([2,3,4]) => \n`)
+console.log(doubleValues([2,3,4]),"\n");  
 
 
 // exercise 2
 
 const onlyEvenValues = (arr) => {return arr.filter((num) => {return num % 2 == 0})};
-  
-console.log(onlyEvenValues([1,2,3,4,5,6])); // test
+
+// TEST 
+
+console.log(`EXERCISE 2 TEST: onlyEvenValues([1,2,3,4,5,6]) => \n`)
+console.log(onlyEvenValues([1,2,3,4,5,6]), "\n"); 
 
 
 
 
 
-//  exercise 3
+//  exercise 
 
 function showFirstAndLast(arr) 
 {
     const firstAndLastArr = arr.filter((value) => {return typeof value === "string"});
-    // firstAndLastArr.splice(1,firstAndLastArr.length -2);
-    return  firstAndLastArr.splice(1,firstAndLastArr.length -2);
+    firstAndLastArr.splice(1,firstAndLastArr.length -2);
+    return  firstAndLastArr;
 }
 
-console.log(showFirstAndLast(["Hello",1,"world",null,"Moon"]));  // test
+// TEST 
+
+console.log(`EXERCISE 3 TEST: showFirstAndLast(["Hello",1,"world",null,"Moon"] => \n`)
+console.log(showFirstAndLast(["Hello",1,"world",null,"Moon"]), "\n");  
 
 
 
@@ -52,8 +61,10 @@ function vowelCount(str)
 
 }
 
+// TEST 
 
-console.log(vowelCount("Hello Moon")); // test
+console.log(`EXERCISE 4 TEST: vowelCount("Hello Moon") => \n`)
+console.log(vowelCount("Hello Moon"), "\n"); 
 
 
 
@@ -62,12 +73,14 @@ console.log(vowelCount("Hello Moon")); // test
 
 capitalize = (str) => {return str.toUpperCase()} ;
 
-console.log(capitalize("hello")); // test
+// TEST 
+
+console.log(`EXERCISE 5 TEST: capitalize("hello") => \n`)
+console.log(capitalize("hello"), "\n"); 
+
 
 
 // exercise 6
-
-
 
 function shiftLetters(str) 
 {
@@ -94,8 +107,10 @@ function shiftLetters(str)
 
 }
 
+// TEST 
 
-console.log(shiftLetters("Zab"));  // test
+console.log(`EXERCISE 6 TEST: shiftLetters("Zab") => \n`)
+console.log(shiftLetters("Zab"), "\n");  
 
 
 
@@ -104,7 +119,10 @@ console.log(shiftLetters("Zab"));  // test
 
 const swapCase = (str) => {return str.split(" ").filter((word,i) => {return i % 2 == 1} ).map((str) => {return capitalize(str)});}
 
-console.log(swapCase("hello moon hey ther"));  // test
+// TEST 
+
+console.log(`EXERCISE 7 TEST: swapCase("hello moon hey ther") => \n`)
+console.log(swapCase("hello moon hey ther"));  
 
 
 
