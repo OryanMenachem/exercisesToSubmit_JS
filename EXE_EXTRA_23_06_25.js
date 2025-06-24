@@ -43,7 +43,8 @@ fish: ["bass", "tuna"],
 }, 
 ]; 
 
-  
+
+// // exercise 1:  two function for return list of names from - data 
 // function getName(obj)
 // {
 
@@ -58,6 +59,13 @@ fish: ["bass", "tuna"],
 // {
 //     return array.map((obj) => {return getName(obj)})
 // }
+
+// // TEST
+// console.log(getNamesList(data));
+
+
+
+// // exercise 2: two function for return all object that year of birthday < 1990
 
 // function before1990(obj)
 // {
@@ -76,62 +84,64 @@ fish: ["bass", "tuna"],
 //     return array.map((obj) => {return before1990(obj)}).filter((ele) => {return ele != undefined} )
 // }
 
+// // TEST
 // console.log(getArrOfObjByBirthday(data));
 
 
 
+// exercise 3: Three functions to return an object containing types of food and the number of times they appear in the data
 
-function getFoodCount(array)
-{
-    const FoodObj = {};
+// function getFoodCount(array)
+// {
+//     const FoodObj = {};
     
-    for (const food of array)
-    {
+//     for (const food of array)
+//     {
         
         
-        if (Object.hasOwn(FoodObj, food))
-        {
-            FoodObj[food] += 1;
-        }
-        else {  FoodObj[food] = 1 }
-    }
+//         if (Object.hasOwn(FoodObj, food))
+//         {
+//             FoodObj[food] += 1;
+//         }
+//         else {  FoodObj[food] = 1 }
+//     }
 
     
-    return FoodObj
+//     return FoodObj
 
-}
-
-
+// }
 
 
 
 
 
-function getFoodsArrayFromObj(obj) 
-{
-    const arrays = [];
 
-    for (const key in obj)
-    {
-        if (key == "favoriteFoods")
-        {
-            for (const ke in obj[key])
-            {
-                arrays.push(obj[key][ke]);
-            }
+
+// function getFoodsArrayFromObj(obj) 
+// {
+//     const arrays = [];
+
+//     for (const key in obj)
+//     {
+//         if (key == "favoriteFoods")
+//         {
+//             for (const ke in obj[key])
+//             {
+//                 arrays.push(obj[key][ke]);
+//             }
               
-        } 
+//         } 
         
-    }
-    return arrays.reduce((acc,curr) =>  acc.concat(curr));
-}
+//     }
+//     return arrays.reduce((acc,curr) =>  acc.concat(curr));
+// }
                 
                 
             
-function getFoodObj(array)
-{
-    return getFoodCount( array.map((obj) => {return getFoodsArrayFromObj(obj)}).reduce((acc,curr) => acc.concat(curr)));
-}
+// function getFoodObj(array)
+// {
+//     return getFoodCount( array.map((obj) => {return getFoodsArrayFromObj(obj)}).reduce((acc,curr) => acc.concat(curr)));
+// }
 
         
    
@@ -139,7 +149,7 @@ function getFoodObj(array)
 
 
 
-console.log(getFoodObj(data));
+// console.log(getFoodObj(data));
 
 
 
