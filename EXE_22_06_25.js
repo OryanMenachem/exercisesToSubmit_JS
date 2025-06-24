@@ -154,6 +154,25 @@
 // console.log(numbersOE);
 
 // exercise 8
+
+for (let i = 0; i < 3; i++)
+{
+    for (let j = 0; j < 3; j++)
+    {
+        if (i - j == 0 || i + j == 2)
+        {
+            process.stdout.write("# ")
+        }
+        else {process.stdout.write("0 " )}
+        
+    }
+    console.log();
+    
+}
+
+
+
+
 // exercise 9
 // exercise 10
 
