@@ -155,26 +155,80 @@
 
 // exercise 8
 
-for (let i = 0; i < 3; i++)
-{
-    for (let j = 0; j < 3; j++)
-    {
-        if (i - j == 0 || i + j == 2)
-        {
-            process.stdout.write("# ")
-        }
-        else {process.stdout.write("0 " )}
+// for (let i = 0; i < 3; i++)
+// {
+//     for (let j = 0; j < 3; j++)
+//     {
+//         if (i - j == 0 || i + j == 2)
+//         {
+//             process.stdout.write("# ")
+//         }
+//         else {process.stdout.write("0 " )}
         
-    }
-    console.log();
+//     }
+//     console.log();
     
-}
+// }
 
 
 
 
 // exercise 9
+
+
+// const str = "Hello moon, look how big the sun is.";
+
+// const letters = [
+//   'A', 'B', 'C', 'D', 'E', 'F', 'G',
+//   'H', 'I', 'J', 'K', 'L', 'M', 'N',
+//   'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+//   'V', 'W', 'X', 'Y', 'Z'
+// ];
+
+// const lettersCount = {};
+
+// for (let letter of str)
+// {
+//     letter = letter.toUpperCase();
+
+//     if (letters.includes(letter))
+//     {
+//         if (Object.hasOwn(lettersCount, letter))
+//         {
+//             lettersCount[letter] ++;
+//         }
+//         else
+//         {
+//             lettersCount[letter] = 1;
+//         }
+//     }
+// }
+
+// console.log(lettersCount);
+
+
 // exercise 10
+const numMatrix = [
+  [  5, -3,  8, -1 ],
+  [ -7, 12, -4,  6 ],
+  [  9, -2, -6, 10 ],
+  [ -5,  3,  7, -8 ]
+];
+
+const numArr = [];
+
+for (const arr of numMatrix)
+{
+    for (const num of arr)
+    {
+        if (num >= 0)
+        {
+            numArr.push(num)
+        }
+    }
+}
+console.log(numArr);
+
 
 
 
