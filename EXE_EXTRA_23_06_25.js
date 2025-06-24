@@ -106,7 +106,7 @@ function getFoodCount(array)
 
 
 
-// מקבלת אובייקט ןמחזירה מערך אחד של כל סוגי האוכל באובייקט
+
 function getFoodsArrayFromObj(obj) 
 {
     const arrays = [];
@@ -130,11 +130,7 @@ function getFoodsArrayFromObj(obj)
             
 function getFoodObj(array)
 {
-    const tempArray = array.map((obj) => {return getFoodsArrayFromObj(obj)}); // 
-    const food = tempArray.reduce((acc,curr) => acc.concat(curr));
-    return getFoodCount(food);
-    
-
+    return getFoodCount( array.map((obj) => {return getFoodsArrayFromObj(obj)}).reduce((acc,curr) => acc.concat(curr)));
 }
 
         
