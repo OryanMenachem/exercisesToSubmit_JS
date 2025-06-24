@@ -1,13 +1,10 @@
 // exercise 1
-// function doubleValues(numArr)
-// {
-//     const newArray1 = numArr.map((num) => {return num*2})
-//     return newArray1
-// }
+
+// const doubleValues = (numArr) => {return numArr.map((num) => {return num*2})}
 
 // console.log(doubleValues([2,3,4]));
 
-// exercise 2
+// // exercise 2
 // function onlyEvenValues(arr) 
 // {
 //     const arrEven = arr.filter((num) => {return num % 2 == 0})
