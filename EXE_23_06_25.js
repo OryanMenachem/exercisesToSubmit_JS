@@ -78,7 +78,10 @@ function shiftLetters(str)
     for (const letter of str) 
     {
 
-        if (letter == letter.toUpperCase()) 
+        if (letter == "z") {newStr += letters[0]}
+        else if (letter == "Z") {newStr += letters[0].toUpperCase()}
+
+        else if (letter == letter.toUpperCase()) 
         {
         newStr += letters[letters.indexOf(letter.toLowerCase())+1].toUpperCase();
         }
@@ -91,7 +94,7 @@ function shiftLetters(str)
 
 }
 
-console.log(shiftLetters("aBc"));
+console.log(shiftLetters("ZzZ"));
 
 
 
