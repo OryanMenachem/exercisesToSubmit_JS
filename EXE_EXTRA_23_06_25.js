@@ -81,39 +81,92 @@ fish: ["bass", "tuna"],
 
 
 
-function getFood(obj)
+function getFoodCount(array)
 {
-    const favoriteFoodsObj = {};
-
-    for (let key in obj) 
+    const FoodObj = {};
+    
+    for (const food of array)
     {
-        if (key == "favoriteFoods") 
+        
+        
+        if (Object.hasOwn(FoodObj, food))
         {
-            for (let ke in obj[key])
-            {
-                for (let food of ke)
-                {
-                    if (Object.hasOwn(favoriteFoodsObj,food))
-                    {
-                        favoriteFoodsObj[food] += 1;
-                    }
-                    else
-                    {
-                        favoriteFoodsObj[food] = 1;
-                    }
-                }
-            }
-
-            
+            FoodObj[food] += 1;
         }
+        else {  FoodObj[food] = 1 }
     }
-    return favoriteFoodsObj
+
+    
+    return FoodObj
 
 }
 
-function getFoods(array)
+
+
+
+
+
+// מקבלת אובייקט ןמחזירה מערך אחד של כל סוגי האוכל באובייקט
+function getFoodsArrayFromObj(obj) 
 {
-    return array.map((obj) => {return getFood(obj)})
+    const arrays = [];
+
+    for (const key in obj)
+    {
+        if (key == "favoriteFoods")
+        {
+            for (const ke in obj[key])
+            {
+                arrays.push(obj[key][ke]);
+            }
+              
+        } 
+        
+    }
+    return arrays.reduce((acc,curr) =>  acc.concat(curr));
+}
+                
+                
+            
+function getFoodObj(array)
+{
+    const tempArray = array.map((obj) => {return getFoodsArrayFromObj(obj)}); // 
+    const food = tempArray.reduce((acc,curr) => acc.concat(curr));
+    return getFoodCount(food);
+    
+
 }
 
-console.log(getFoods(data));
+        
+   
+
+
+
+
+console.log(getFoodObj(data));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(getArrayFromObj({a:["A","b"], b: [1,2,3]}));
+
