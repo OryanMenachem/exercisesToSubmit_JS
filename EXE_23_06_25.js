@@ -4,23 +4,23 @@
 
 // console.log(doubleValues([2,3,4]));
 
+
 // exercise 2
-const onlyEvenValues = (arr) => {return arr.filter((num) => {return num % 2 == 0})}
+// const onlyEvenValues = (arr) => {return arr.filter((num) => {return num % 2 == 0})}
   
-console.log(onlyEvenValues([1,2,3,4,5,6]));
-
-
-
 // console.log(onlyEvenValues([1,2,3,4,5,6]));
 
+
+
+
 //  exercise 3
-// function showFirstAndLast(arr) 
-// {
-//     const firstAndLastArr = arr.filter((value) => {return typeof value === "string"})
-//     firstAndLastArr.splice(1,firstAndLastArr.length -2)
-//     return firstAndLastArr;
-// }
-// console.log(showFirstAndLast(["Hello",1,"world",null]));
+function showFirstAndLast(arr) 
+{
+    const firstAndLastArr = arr.filter((value) => {return typeof value === "string"})
+    firstAndLastArr.splice(1,firstAndLastArr.length -2)
+    return firstAndLastArr;
+}
+console.log(showFirstAndLast(["Hello",1,"world",null,"Moon"]));
 
 
 
