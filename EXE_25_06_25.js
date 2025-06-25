@@ -11,3 +11,19 @@ function Phone(brand, model)
 
 const P1 = new Phone("Samsung", "S22");
 P1.details()
+
+
+// exercise 2
+
+function Rectangle(width, height)
+{
+    this.width = width;
+    this.height = height;
+    this.area = function() {
+        return width*height;
+    }
+}
+
+const rectangle1 = Rectangle(6,8);
+
+console.log(rectangle1.area());
