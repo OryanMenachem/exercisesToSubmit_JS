@@ -24,6 +24,6 @@ function Rectangle(width, height)
     }
 }
 
-const rectangle1 = Rectangle(6,8);
+const rectangle1 = new Rectangle(6,8);
 
 console.log(rectangle1.area());
