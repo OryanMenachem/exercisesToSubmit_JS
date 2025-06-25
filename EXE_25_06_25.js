@@ -127,3 +127,91 @@
 // car1.describe()
 
 // car1.info()
+
+
+// exercise 6
+
+// function Shape(){
+//     this.area = function(){
+//         return 0;
+//     }
+// }
+
+// const shape1 = new Shape();
+
+// function Circle(radius){
+//     this.area = function(){
+//         return Math.PI * (radius*radius);
+//     }
+// }
+
+// const circle1 = new Circle(5);
+
+// function Square(side){
+//        this.area = function(){
+//         return side*side;
+//     }
+
+// }
+
+// const square1 = new Square(7);
+
+// Object.setPrototypeOf(circle1, shape1)
+
+// Object.setPrototypeOf(square1, shape1)
+
+// console.log(shape1.area())
+
+// console.log(circle1.area())
+
+// console.log(square1.area())
+
+
+// exercise 7
+// function Book(title, author){
+//     this.title = title;
+//     this.author = author;
+//     this.info = function(){
+//         console.log(`${this.title} by ${ this.author}`);
+        
+//     }
+
+// }
+
+// const book1 = new Book(`The Hobbit`, `Tolkien`)
+
+// book1.info()
+
+
+
+// exercise 8
+function Person(name) {
+    this.name = name;
+    this.greet = function(){
+        console.log(`Hello I'm ${this.name}`);
+        
+    }
+}
+
+const person1 = new Person();
+
+function Student(name, school){
+    this.name = name;
+    this.school = school;
+    this.study = function(){
+        console.log(`${this.name} is studying at ${this.school}`);
+        
+    }
+
+}
+
+const student1 = new Student(`Alice`,`Ariel University`)
+
+Object.setPrototypeOf(student1, person1)
+
+student1.greet()
+
+student1.study()
+
+
+// exercise 9
