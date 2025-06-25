@@ -185,33 +185,79 @@
 
 
 // exercise 8
-function Person(name) {
-    this.name = name;
-    this.greet = function(){
-        console.log(`Hello I'm ${this.name}`);
+
+
+// function Person(name) {
+//     this.name = name;
+//     this.greet = function(){
+//         console.log(`Hello I'm ${this.name}`);
         
-    }
-}
+//     }
+// }
 
-const person1 = new Person();
+// const person1 = new Person();
 
-function Student(name, school){
-    this.name = name;
-    this.school = school;
-    this.study = function(){
-        console.log(`${this.name} is studying at ${this.school}`);
+// function Student(name, school){
+//     this.name = name;
+//     this.school = school;
+//     this.study = function(){
+//         console.log(`${this.name} is studying at ${this.school}`);
         
-    }
+//     }
 
-}
+// }
 
-const student1 = new Student(`Alice`,`Ariel University`)
+// const student1 = new Student(`Alice`,`Ariel University`)
 
-Object.setPrototypeOf(student1, person1)
+// Object.setPrototypeOf(student1, person1)
 
-student1.greet()
+// student1.greet()
 
-student1.study()
+// student1.study()
 
 
 // exercise 9
+
+class Employee {
+
+    #salary;
+
+    constructor() {
+
+        this.#salary = 12000;
+    }
+
+    getSalary() {
+        return this.#salary       
+    }
+
+    work(){
+        console.log(`Employee is working`);
+        
+    }
+
+}
+
+const employee1 = new Employee();
+
+class Manager extends Employee  {
+
+    work() {
+        console.log(`Manager is managing`);
+        
+    }
+    
+}
+
+const manager1 = new Manager()
+
+
+employee1.work();
+
+console.log(manager1.getSalary());
+
+manager1.work();
+
+
+
+
