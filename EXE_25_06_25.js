@@ -259,5 +259,3 @@ console.log(manager1.getSalary());
 manager1.work();
 
 
-
-
