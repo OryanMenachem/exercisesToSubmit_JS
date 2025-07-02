@@ -24,7 +24,7 @@
 
 //     .then(resolve => resolve.json() )
 
-//     .then(date => console.log(`Post title:  ${date.title}`) )
+//     .then(data => console.log(`Post title:  ${data.title}`) )
 
 //     .catch(err => console.log(err))
 
@@ -42,7 +42,7 @@
 
 //     .then(resolve => resolve.json())
 
-//     .then(date => console.log(`User's email: ${date.email}`) )
+//     .then(data => console.log(`User's email: ${data.email}`) )
 
 //     .catch(err => console.log(err))
 
@@ -59,7 +59,7 @@
 
 //     .then(resolve => resolve.json())
 
-//     .then(date => console.log(`User ${userId}: has ${date.length} todos`) )
+//     .then(data => console.log(`User ${userId}: has ${data.length} todos`) )
 
 //     .catch(err => console.log(err))
 
@@ -75,9 +75,9 @@
 
 //     .then(resolve => resolve.json() )
 
-//     .then(date => { 
+//     .then(data => { 
     
-//         if(date.userId) {console.log(`Post exists`);}
+//         if(data.userId) {console.log(`Post exists`);}
 
 //         else {console.log(`Post not found`);}
         
@@ -118,30 +118,34 @@
 
 // EXERCISE 7
 
-function showKeys(url) {
+// function showKeys(url) {
 
-     fetch(url)
+//      fetch(url)
 
-    .then(resolve => resolve.json() )
+//     .then(resolve => resolve.json() )
 
-    .then(data => { 
+//     .then(data => { 
 
-        const keysObj = {keys : []}
+//         const keysObj = {keys : []}
 
-        for(const key in data ) {
+//         for(const key in data ) {
 
-            keysObj.keys.push(key);
+//             keysObj.keys.push(key);
         
-     }
-     return keysObj;
-     })
+//      }
+//      return keysObj;
+//      })
 
-    .then(keysObj => console.log(keysObj))
+//     .then(keysObj => console.log(keysObj))
 
-    .catch(err => console.log(err))
+//     .catch(err => console.log(err))
 
     
-}
+// }
 
-const path = 'https://jsonplaceholder.typicode.com/users/7';
-showKeys(path);
+// const path = 'https://jsonplaceholder.typicode.com/users/7';
+// showKeys(path);
+
+// EXERCISE 8
+// EXERCISE 9
+// EXERCISE 10
