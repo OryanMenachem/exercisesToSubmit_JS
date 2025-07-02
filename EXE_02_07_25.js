@@ -53,16 +53,43 @@
 
 // EXERCISE 4
 
-function listUserTodos(userId) {
+// function listUserTodos(userId) {
 
-    fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`)
+//     fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`)
 
-    .then(resolve => resolve.json())
+//     .then(resolve => resolve.json())
 
-    .then(date => console.log(`User ${userId}: has ${date.length} todos`) )
+//     .then(date => console.log(`User ${userId}: has ${date.length} todos`) )
 
-    .catch(err => console.log(err))
+//     .catch(err => console.log(err))
 
-}
+// }
 
-listUserTodos(4) 
+// listUserTodos(4) 
+
+// EXERCISE 5
+
+// function checkPostExists(postId) {
+
+//     fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+
+//     .then(resolve => resolve.json() )
+
+//     .then(date => { 
+    
+//         if(date.userId) {console.log(`Post exists`);}
+
+//         else {console.log(`Post not found`);}
+        
+//     })
+
+//     .catch(err => console.log((err)))
+    
+
+
+// }
+
+// checkPostExists(1);
+// checkPostExists(12345679);
+
+// EXERCISE 6
