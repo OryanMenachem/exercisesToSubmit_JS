@@ -1,4 +1,4 @@
-// exercise 1
+// EXERCISE 1
 
 // function getUser(userId) {
 
@@ -12,22 +12,57 @@
 // }
 
 
-// getUser(2);
+// getUser(1);
 
 
 
-// exercise 2
+// EXERCISE 2
 
-function getPost(postId) {
+// function getPost(postId) {
      
-     fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+//      fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
 
-    .then(resolve => resolve.json() )
+//     .then(resolve => resolve.json() )
 
-    .then(date => console.log(`Post title:  ${date.title}`) )
+//     .then(date => console.log(`Post title:  ${date.title}`) )
+
+//     .catch(err => console.log(err))
+
+// }
+
+// getPost(2);
+
+
+
+// EXERCISE 3
+
+// function  getUserEmail(userId) {
+    
+//      fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+
+//     .then(resolve => resolve.json())
+
+//     .then(date => console.log(`User's email: ${date.email}`) )
+
+//     .catch(err => console.log(err))
+
+// }
+
+// getUserEmail(3)
+
+
+// EXERCISE 4
+
+function listUserTodos(userId) {
+
+    fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`)
+
+    .then(resolve => resolve.json())
+
+    .then(date => console.log(`User ${userId}: has ${date.length} todos`) )
 
     .catch(err => console.log(err))
 
 }
 
-getPost(3);
+listUserTodos(4) 
