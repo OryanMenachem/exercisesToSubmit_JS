@@ -1,33 +1,27 @@
 import { error } from 'node:console';
 import * as fsp from 'node:fs/promises';
 import { promises } from 'node:stream';
-import fs from 'fs';
+
 
 
 
 
 // EXERCISE 1
 
-// function readFilePromise(path) {
+function readFilePromise(path) 
+{
+    return fsp.readFile(path, 'utf8')
 
-//     return new Promise((resolve, reject) => {
+    .then((data) => data)
 
-//         fs.readFile(path, 'utf8', (err, data) => {
-
-//             if (err) {reject(err)}
-
-//             resolve(data);
-//         })
-     
-        
-
-//     })
-// }
+    .catch((err) => err)
+}
 
 
-// const p1 = readFilePromise('./file.txt')
+const p1 = readFilePromise('./file.txt')
 
-// p1.then((data) => console.log(data))
+p1.then((data) => console.log(data))
+
 
 
 
@@ -57,13 +51,19 @@ import fs from 'fs';
 
 
 
-
-
-
-
-
-
-
-
 // EXERCISE 3
+
+async function getFileSize(path) {
+
+    const size = await fsp.stat(path,)
+}
+
+
+
+
+
+
+
+
+
 // EXERCISE 4
