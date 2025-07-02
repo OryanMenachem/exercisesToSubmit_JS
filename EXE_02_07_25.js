@@ -117,3 +117,31 @@
 
 
 // EXERCISE 7
+
+function showKeys(url) {
+
+     fetch(url)
+
+    .then(resolve => resolve.json() )
+
+    .then(data => { 
+
+        const keysObj = {keys : []}
+
+        for(const key in data ) {
+
+            keysObj.keys.push(key);
+        
+     }
+     return keysObj;
+     })
+
+    .then(keysObj => console.log(keysObj))
+
+    .catch(err => console.log(err))
+
+    
+}
+
+const path = 'https://jsonplaceholder.typicode.com/users/7';
+showKeys(path);
