@@ -2,7 +2,7 @@
 
 // function getUser(userId) {
 
-//     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+//      fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
 
 //     .then(resolve => resolve.json() )
 
@@ -55,7 +55,7 @@
 
 // function listUserTodos(userId) {
 
-//     fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`)
+//      fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userId}`)
 
 //     .then(resolve => resolve.json())
 
@@ -71,7 +71,7 @@
 
 // function checkPostExists(postId) {
 
-//     fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+//      fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
 
 //     .then(resolve => resolve.json() )
 
@@ -93,3 +93,27 @@
 // checkPostExists(12345679);
 
 // EXERCISE 6
+
+// function fetchWithDelay(url, delay) {
+
+//     setTimeout(()=> {
+             
+//     fetch(url)
+
+//     .then(resolve => resolve.json())
+
+//     .then(data => JSON.stringify(data))
+
+//     .then(data => console.log(data.slice(0, 50)))
+
+//     .catch(err => console.log(err))
+
+//     }, delay)
+// }
+
+// const path = 'https://jsonplaceholder.typicode.com/users/6';
+
+// fetchWithDelay(path, 2000);
+
+
+// EXERCISE 7
