@@ -96,7 +96,7 @@ import { readFile } from 'node:fs';
 
 // const path = "C:/Users/om316/OneDrive/Desktop/exercises";
 // const p1 = await listFiles(path);
-// console.log(p1);
+// p1.forEach((element,i) => {console.log(`${i+1}. ${element}`);});
 
 
 
@@ -132,7 +132,11 @@ import { readFile } from 'node:fs';
 
 // const p1 = await readFilesInOrder(fileList);
 
-// console.log(p1);
+// for (const key in p1) {
+
+//     console.log(`${key}: \n${p1[key]}\n`);
+   
+// }
 
 
 
