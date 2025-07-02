@@ -2,6 +2,7 @@ import { error } from 'node:console';
 import * as fsp from 'node:fs/promises';
 import { promises } from 'node:stream';
 import fs from 'fs';
+import { readFile } from 'node:fs';
 // import path from 'node:path';
 
 
@@ -101,6 +102,41 @@ import fs from 'fs';
 
 
 // EXERCISE 5
+
+//  async function readFilesInOrder(files) {
+
+//     const fileContentsObj = {}
+
+//     try {
+
+//     for (let i = 0; i < files.length; i++) {
+        
+    
+
+//         fileContentsObj['file' + (i+1)] = await fsp.readFile(files[i], 'utf-8')
+
+//     }
+
+//     if (!fileContentsObj) {throw new Error('error'); }
+    
+//     return fileContentsObj;
+//     }
+
+//     catch (error) {return error}
+
+
+
+// }
+
+// const fileList  = ['./file.txt','./file1.txt','./file2.txt'];
+
+// const p1 = await readFilesInOrder(fileList);
+
+// console.log(p1);
+
+
+
+
 
 // EXERCISE 6
 
