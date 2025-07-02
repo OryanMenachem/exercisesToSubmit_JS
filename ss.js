@@ -19,9 +19,5 @@ fs.readFile('./file.txt', 'utf-8', (err, data) => {
 })
    
 })
-  
 
 
-//  exercise 2
-
-  
