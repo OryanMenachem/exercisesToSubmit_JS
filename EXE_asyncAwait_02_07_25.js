@@ -105,39 +105,41 @@ import { readFile } from 'node:fs';
 
 //  async function readFilesInOrder(files) {
 
-//     const fileContentsObj = {}
+//     const fileContents = {}
 
 //     try {
+        
 
 //     for (let i = 0; i < files.length; i++) {
         
+//         fileContents['file' + (i+1)] = await fsp.readFile(files[i], 'utf-8')
+//     }
     
-
-//         fileContentsObj['file' + (i+1)] = await fsp.readFile(files[i], 'utf-8')
-
+//     if (!fileContents) {throw new Error('error'); }
+    
+//     return fileContents;
+    
 //     }
 
-//     if (!fileContentsObj) {throw new Error('error'); }
     
-//     return fileContentsObj;
+//         catch (error) {return error}
+    
 //     }
+    
+    
 
-//     catch (error) {return error}
 
-
-
-// }
 
 // const fileList  = ['./file.txt','./file1.txt','./file2.txt'];
 
-// const p1 = await readFilesInOrder(fileList);
+// const fileContents = await readFilesInOrder(fileList);
 
-// for (const key in p1) {
 
-//     console.log(`${key}: \n${p1[key]}\n`);
-   
+
+// for (const key in fileContents) {
+
+//       console.log(`${key}: \n${fileContents[key]}\n`);
 // }
-
 
 
 
