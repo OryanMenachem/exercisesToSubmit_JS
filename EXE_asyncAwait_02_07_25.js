@@ -144,4 +144,26 @@ import { readFile } from 'node:fs';
 
 // EXERCISE 6
 
+//  async function readFilesParallel(files) {
+
+//     try {
+
+//         const fileContents = await Promise.all (files.map((file) => fsp.readFile(file, 'utf-8')))
+
+//         if (!fileContents) {throw new Error('error')}
+
+//         return fileContents;
+//     }
+//     catch (error) {return error}
+
+//  }
+
+ 
+// const fileList  = ['./file.txt','./file1.txt','./file2.txt'];
+
+// const fileContents = await readFilesParallel(fileList);
+
+// fileContents.forEach((element, i) => {console.log(`file${i + 1}: \n${element}\n`)});
+
+
 // EXERCISE 7
